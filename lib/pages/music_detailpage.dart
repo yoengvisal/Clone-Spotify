@@ -18,12 +18,12 @@ class MusicDetailPage extends StatefulWidget {
   final String songUrl;
 
   const MusicDetailPage(
-      {Key? key,
-      required this.title,
-      required this.description,
-      required this.color,
-      required this.img,
-      required this.songUrl})
+      {Key key,
+       this.title,
+       this.description,
+       this.color,
+       this.img,
+       this.songUrl})
       : super(key: key);
 
   @override
@@ -33,8 +33,8 @@ class MusicDetailPage extends StatefulWidget {
 class _MusicDetailPageState extends State<MusicDetailPage> {
   double _currentSliderValue = 20;
 
-  late AudioPlayer advancedPlayer;
-  late AudioCache audioCache;
+ AudioPlayer advancedPlayer;
+ AudioCache audioCache;
   bool isPlayer = true;
 
 
@@ -266,13 +266,11 @@ class _MusicDetailPageState extends State<MusicDetailPage> {
                       stopSound(widget.songUrl);
                       setState(() {
                         isPlayer = false;
-
                       });
                     }else{
                        playSound(widget.songUrl);
                       setState(() {
                         isPlayer = true;
-
                       });
                     }
                   },

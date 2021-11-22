@@ -6,7 +6,7 @@ import 'package:music/theme/colors.dart';
 import 'package:page_transition/page_transition.dart';
 
 class HomePage extends StatefulWidget {
-  const HomePage({Key? key}) : super(key: key);
+  const HomePage({Key key}) : super(key: key);
 
   @override
   _HomePageState createState() => _HomePageState();

@@ -4,15 +4,13 @@ import 'package:music/pages/home_page.dart';
 import 'package:music/theme/colors.dart';
 
 class RootApp extends StatefulWidget {
-  const RootApp({Key? key}) : super(key: key);
-
+  const RootApp({Key key}) : super(key: key);
   @override
   _RootAppState createState() => _RootAppState();
 }
 
 class _RootAppState extends State<RootApp> {
   int activeTap = 0;
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,7 +27,6 @@ class _RootAppState extends State<RootApp> {
       Icons.search,
       Icons.settings,
     ];
-
     return Container(
       height: 80,
       decoration: BoxDecoration(

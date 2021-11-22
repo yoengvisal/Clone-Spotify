@@ -3,12 +3,11 @@ import 'package:flutter/painting.dart';
 import 'package:music/json/songs_json.dart';
 import 'package:music/pages/music_detailpage.dart';
 import 'package:music/theme/colors.dart';
-import 'package:page_transition/page_transition.dart';
 
 class AlbumPage extends StatefulWidget {
   final dynamic song;
 
-  const AlbumPage({Key? key, this.song}) : super(key: key);
+  const AlbumPage({Key key, this.song}) : super(key: key);
 
   @override
   _AlbumPageState createState() => _AlbumPageState();
